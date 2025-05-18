@@ -13,4 +13,4 @@ SELECT
         ELSE NULL
     END AS STATUSDESC,
     UPDATED_AT
-FROM EMART_OMS.L1_LANDING.ORDERS
+FROM {{source('landing', 'ord')}}

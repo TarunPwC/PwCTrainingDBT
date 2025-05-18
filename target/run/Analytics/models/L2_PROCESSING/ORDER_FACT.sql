@@ -6,8 +6,7 @@ create or replace table EMART_OMS.L2_PROCESSING.ORDER_FACT
     
 
     
-    as (
-SELECT
+    as (SELECT
     O.ORDERID,
     O.ORDERDATE,
     O.CUSTOMERID,

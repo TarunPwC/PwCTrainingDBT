@@ -6,21 +6,21 @@ create or replace table EMART_OMS.L2_PROCESSING.ORDER_STG
     
 
     
-    as (SELECT
-    ORDERID,
-    ORDERDATE,
-    CUSTOMERID,
-    EMPLOYEEID,
-    STOREID,
-    STATUS AS STATUSCD,
-    CASE 
-        WHEN STATUS = '01' THEN 'In Progress'
-        WHEN STATUS = '02' THEN 'Completed'
-        WHEN STATUS = '03' THEN 'Cancelled'
-        WHEN STATUS = '04' THEN 'Pending'
-        ELSE NULL
-    END AS STATUSDESC,
-    UPDATED_AT
+    as (SELECT
+    ORDERID,
+    ORDERDATE,
+    CUSTOMERID,
+    EMPLOYEEID,
+    STOREID,
+    STATUS AS STATUSCD,
+    CASE 
+        WHEN STATUS = '01' THEN 'In Progress'
+        WHEN STATUS = '02' THEN 'Completed'
+        WHEN STATUS = '03' THEN 'Cancelled'
+        WHEN STATUS = '04' THEN 'Pending'
+        ELSE NULL
+    END AS STATUSDESC,
+    UPDATED_AT
 FROM EMART_OMS.L1_LANDING.ORDERS
     )
 ;

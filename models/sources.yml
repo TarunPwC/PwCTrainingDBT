@@ -1,0 +1,143 @@
+version: 2
+
+sources:
+  - name: landing
+    database: EMART_OMS
+    schema: L1_LANDING
+    tables:
+      - name: cust
+        identifier: CUSTOMERS
+        columns:
+          - name: CUSTOMERID
+            tests:
+              - unique
+              - not_null
+              - string_not_empty
+          - name: FIRSTNAME
+            tests:
+              - not_null   
+              - string_not_empty  
+          - name: LASTNAME
+            tests:
+              - not_null   
+              - string_not_empty               
+
+      - name: ord
+        identifier: ORDERS
+        columns:
+          - name: ORDERID
+            tests:
+              - unique
+              - not_null
+              - string_not_empty
+          - name: CUSTOMERID
+            tests:
+              - not_null   
+              - string_not_empty  
+          - name: EMPLOYEEID
+            tests:
+              - not_null   
+              - string_not_empty
+              
+      - name: ordItms
+        identifier: ORDERITEMS
+        columns:
+          - name: ORDERITEMID
+            tests:
+              - unique
+              - not_null
+              - string_not_empty
+          - name: ORDERID
+            tests:
+              - not_null   
+              - string_not_empty  
+          - name: PRODUCTID
+            tests:
+              - not_null   
+              - string_not_empty
+
+      - name: product
+        identifier: PRODUCTS  
+        columns:
+          - name: PRODUCTID
+            tests:
+              - unique
+              - not_null
+              - string_not_empty
+
+      - name: EMP
+        identifier: EMPLOYEES
+        columns:
+          - name: EMPLOYEEID
+            tests:
+              - unique
+              - not_null
+              - string_not_empty
+          - name: FIRSTNAME
+            tests:
+              - not_null   
+              - string_not_empty  
+          - name: LASTNAME
+            tests:
+              - not_null   
+              - string_not_empty
+          - name: EMAIL
+            tests:
+              - not_null   
+              - string_not_empty
+
+      - name: DATE
+        identifier: DATES
+
+      - name: STORE
+        identifier: STORES
+        columns:
+          - name: STOREID
+            tests:
+              - unique
+              - not_null
+              - string_not_empty
+
+      - name: SUPP
+        identifier: SUPPLIERS
+        columns:
+          - name: SUPPLIERID
+            tests:
+              - unique
+              - not_null
+              - string_not_empty
+
+  - name: processing
+    database: EMART_OMS
+    schema: L2_PROCESSING
+    tables:
+      - name: custStg
+        identifier: CUSTOMER_STG
+      
+      - name: ordStg
+        identifier: ORDER_STG
+      
+      - name: ordItmsStg
+        identifier: ORDERITEM_STG
+
+      - name: proSal
+        identifier: PRODUCTSALES
+
+      - name: ordFact
+        identifier: ORDER_FACT
+
+  - name: consumption
+    database: EMART_OMS
+    schema: L3_CONSUMPTION
+    tables:
+      - name: custOrd
+        identifier: CUSTOMERORDER
+      
+      - name: custRev
+        identifier: CUSTOMERREVENUE
+      
+      - name: proPerf
+        identifier: PRODUCTPERFORMANCE
+
+      - name: stPerf
+        identifier: STOREPERFORMANCE

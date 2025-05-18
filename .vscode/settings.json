@@ -1,0 +1,25 @@
+{
+    "sqltools.connections": [
+        {
+            "authenticator": "SNOWFLAKE",
+            "ocspOptions": {
+                "ocspFailOpen": true
+            },
+            "snowflakeOptions": {
+                "clientSessionKeepAlive": true,
+                "clientSessionKeepAliveHeartbeatFrequency": 3600,
+                "schema": "L3_CONSUMPTION",
+                "role": "ACCOUNTADMIN"
+            },
+            "previewLimit": 50,
+            "driver": "Snowflake",
+            "name": "Personal_Account_DBT",
+            "group": "Testing",
+            "account": "dzviuyy-bj78412",
+            "username": "TARUN9832",
+            "password": "Amazingsunil@1",
+            "database": "EMART_OMS",
+            "warehouse": "COMPUTE_WH"
+        }
+    ]
+}
