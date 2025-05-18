@@ -2762,3 +2762,16 @@ GROUP BY
 [0m02:58:02.555915 [debug] [MainThread]: Flushing usage events
 [0m02:58:03.289638 [debug] [MainThread]: An error was encountered while trying to flush usage events
 [0m02:58:03.430935 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:41:25.096989 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A5B66CFAD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A5B3BA8830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A5B565D400>]}
+
+
+============================== 19:41:25.103006 | 914c7e64-846e-4f86-952e-b94db8dd06c9 ==============================
+[0m19:41:25.103006 [info ] [MainThread]: Running with dbt=1.9.4
+[0m19:41:25.104008 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\bkumar116\\.dbt', 'log_path': 'c:\\Users\\bkumar116\\OneDrive - PwC\\Documents\\DBT\\Analytics\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt ', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m19:41:25.409733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '914c7e64-846e-4f86-952e-b94db8dd06c9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A5B66CF7D0>]}
+[0m19:41:25.446250 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m19:41:25.449245 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m19:41:25.451255 [debug] [MainThread]: Command `cli deps` succeeded at 19:41:25.451255 after 0.68 seconds
+[0m19:41:25.452247 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A5B6B19940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A5B6D55310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A5B62DCEC0>]}
+[0m19:41:25.452247 [debug] [MainThread]: Flushing usage events
+[0m19:41:26.385766 [debug] [MainThread]: An error was encountered while trying to flush usage events
