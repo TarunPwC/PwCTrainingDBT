@@ -3008,3 +3008,282 @@ alter session unset quoted_identifiers_ignore_case;
 [0m20:52:48.703634 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225ED8EC2C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225ED8EF530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002258031EE10>]}
 [0m20:52:48.703634 [debug] [MainThread]: Flushing usage events
 [0m20:52:49.561034 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:58:32.127459 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001846394BA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001846636D2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018465A2DD30>]}
+
+
+============================== 00:58:32.135391 | 071361a6-53e9-4137-8fc7-90a55d072fd8 ==============================
+[0m00:58:32.135391 [info ] [MainThread]: Running with dbt=1.9.4
+[0m00:58:32.136328 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\bkumar116\\OneDrive - PwC\\Documents\\DBT\\Analytics\\logs', 'profiles_dir': 'C:\\Users\\bkumar116\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt seed --select SALESTARGET', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:58:36.206118 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '071361a6-53e9-4137-8fc7-90a55d072fd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184786C1640>]}
+[0m00:58:36.253125 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '071361a6-53e9-4137-8fc7-90a55d072fd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018466665EE0>]}
+[0m00:58:36.257196 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m00:58:36.790154 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m00:58:36.929430 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:58:36.929430 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:58:36.959444 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '071361a6-53e9-4137-8fc7-90a55d072fd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184787ADB80>]}
+[0m00:58:37.026981 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\bkumar116\OneDrive - PwC\Documents\DBT\Analytics\target\manifest.json
+[0m00:58:37.050998 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\bkumar116\OneDrive - PwC\Documents\DBT\Analytics\target\semantic_manifest.json
+[0m00:58:37.121649 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '071361a6-53e9-4137-8fc7-90a55d072fd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018478975550>]}
+[0m00:58:37.122649 [info ] [MainThread]: Found 6 models, 1 seed, 477 macros
+[0m00:58:37.123648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '071361a6-53e9-4137-8fc7-90a55d072fd8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018478A3C800>]}
+[0m00:58:37.124820 [info ] [MainThread]: 
+[0m00:58:37.125923 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m00:58:37.126837 [info ] [MainThread]: 
+[0m00:58:37.126837 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m00:58:37.127828 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EMART_OMS'
+[0m00:58:40.600255 [debug] [ThreadPool]: Using snowflake connection "list_EMART_OMS"
+[0m00:58:40.601255 [debug] [ThreadPool]: On list_EMART_OMS: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Analytics", "target_name": "dev", "connection_name": "list_EMART_OMS"} */
+show terse schemas in database EMART_OMS
+    limit 10000
+[0m00:58:40.601255 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:58:43.701567 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Analytics", "target_name": "dev", "connection_name": "list_EMART_OMS"} */
+show terse schemas in database EMART_OMS
+    limit 10000
+[0m00:58:43.702662 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m00:58:43.702662 [debug] [ThreadPool]: Snowflake adapter: Error running SQL: macro list_schemas
+[0m00:58:43.703658 [debug] [ThreadPool]: Snowflake adapter: Rolling back transaction.
+[0m00:58:43.704491 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:58:43.704491 [debug] [MainThread]: Connection 'list_EMART_OMS' was left open.
+[0m00:58:43.704491 [debug] [MainThread]: On list_EMART_OMS: No close available on handle
+[0m00:58:43.705582 [info ] [MainThread]: 
+[0m00:58:43.706566 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 6.58 seconds (6.58s).
+[0m00:58:43.707589 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Database error while listing schemas in database "EMART_OMS"
+  Database Error
+    250001: Could not connect to Snowflake backend after 2 attempt(s).Aborting
+    Verify that the hostnames and port numbers in SYSTEM$ALLOWLIST are added to your firewall's allowed list.
+    To further troubleshoot your connection you may reference the following article: https://docs.snowflake.com/en/user-guide/client-connectivity-troubleshooting/overview.
+[0m00:58:43.708609 [debug] [MainThread]: Command `dbt seed` failed at 00:58:43.708609 after 11.73 seconds
+[0m00:58:43.709588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184629F6180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018478B27440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018466B66CF0>]}
+[0m00:58:43.709588 [debug] [MainThread]: Flushing usage events
+[0m00:58:45.052719 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:59:06.527801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217A1D7F680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217A45C1DC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217A45C2DB0>]}
+
+
+============================== 00:59:06.533597 | 64e097f7-13c8-43f2-b557-e4e2235adacc ==============================
+[0m00:59:06.533597 [info ] [MainThread]: Running with dbt=1.9.4
+[0m00:59:06.534081 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\bkumar116\\OneDrive - PwC\\Documents\\DBT\\Analytics\\logs', 'profiles_dir': 'C:\\Users\\bkumar116\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt compile', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:59:07.819081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '64e097f7-13c8-43f2-b557-e4e2235adacc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217B6EA8F80>]}
+[0m00:59:07.866892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '64e097f7-13c8-43f2-b557-e4e2235adacc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217A4A13140>]}
+[0m00:59:07.869832 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m00:59:08.295160 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m00:59:08.439236 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:59:08.439236 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:59:08.473242 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '64e097f7-13c8-43f2-b557-e4e2235adacc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217B5E1CCB0>]}
+[0m00:59:08.555083 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\bkumar116\OneDrive - PwC\Documents\DBT\Analytics\target\manifest.json
+[0m00:59:08.561085 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\bkumar116\OneDrive - PwC\Documents\DBT\Analytics\target\semantic_manifest.json
+[0m00:59:08.605086 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '64e097f7-13c8-43f2-b557-e4e2235adacc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217B71331A0>]}
+[0m00:59:08.607082 [info ] [MainThread]: Found 6 models, 1 seed, 477 macros
+[0m00:59:08.607730 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '64e097f7-13c8-43f2-b557-e4e2235adacc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217B71BB290>]}
+[0m00:59:08.609821 [info ] [MainThread]: 
+[0m00:59:08.609821 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m00:59:08.610747 [info ] [MainThread]: 
+[0m00:59:08.611766 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m00:59:08.615861 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EMART_OMS_L2_PROCESSING'
+[0m00:59:08.635377 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EMART_OMS_L3_CONSUMPTION'
+[0m00:59:08.709078 [debug] [ThreadPool]: Using snowflake connection "list_EMART_OMS_L2_PROCESSING"
+[0m00:59:08.710128 [debug] [ThreadPool]: On list_EMART_OMS_L2_PROCESSING: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Analytics", "target_name": "dev", "connection_name": "list_EMART_OMS_L2_PROCESSING"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m00:59:08.710128 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:59:08.711081 [debug] [ThreadPool]: Using snowflake connection "list_EMART_OMS_L3_CONSUMPTION"
+[0m00:59:08.713246 [debug] [ThreadPool]: On list_EMART_OMS_L3_CONSUMPTION: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Analytics", "target_name": "dev", "connection_name": "list_EMART_OMS_L3_CONSUMPTION"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m00:59:08.713246 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:59:11.155351 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 2.441 seconds
+[0m00:59:11.159351 [debug] [ThreadPool]: Using snowflake connection "list_EMART_OMS_L3_CONSUMPTION"
+[0m00:59:11.160351 [debug] [ThreadPool]: On list_EMART_OMS_L3_CONSUMPTION: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Analytics", "target_name": "dev", "connection_name": "list_EMART_OMS_L3_CONSUMPTION"} */
+show objects in EMART_OMS.L3_CONSUMPTION
+    limit 10000
+    
+;
+[0m00:59:11.170356 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 2.459 seconds
+[0m00:59:11.171357 [debug] [ThreadPool]: Using snowflake connection "list_EMART_OMS_L2_PROCESSING"
+[0m00:59:11.172355 [debug] [ThreadPool]: On list_EMART_OMS_L2_PROCESSING: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Analytics", "target_name": "dev", "connection_name": "list_EMART_OMS_L2_PROCESSING"} */
+show objects in EMART_OMS.L2_PROCESSING
+    limit 10000
+    
+;
+[0m00:59:11.363124 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.191 seconds
+[0m00:59:11.366124 [debug] [ThreadPool]: Using snowflake connection "list_EMART_OMS_L2_PROCESSING"
+[0m00:59:11.366124 [debug] [ThreadPool]: On list_EMART_OMS_L2_PROCESSING: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Analytics", "target_name": "dev", "connection_name": "list_EMART_OMS_L2_PROCESSING"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m00:59:11.371047 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.211 seconds
+[0m00:59:11.373162 [debug] [ThreadPool]: Using snowflake connection "list_EMART_OMS_L3_CONSUMPTION"
+[0m00:59:11.373162 [debug] [ThreadPool]: On list_EMART_OMS_L3_CONSUMPTION: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Analytics", "target_name": "dev", "connection_name": "list_EMART_OMS_L3_CONSUMPTION"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m00:59:11.458258 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.084 seconds
+[0m00:59:11.515028 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.148 seconds
+[0m00:59:11.519309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '64e097f7-13c8-43f2-b557-e4e2235adacc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217B6EABF20>]}
+[0m00:59:11.572119 [debug] [Thread-1 (]: Began running node model.Analytics.CUSTOMERORDER
+[0m00:59:11.572119 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.Analytics.CUSTOMERORDER'
+[0m00:59:11.573121 [debug] [Thread-1 (]: Began compiling node model.Analytics.CUSTOMERORDER
+[0m00:59:11.649666 [debug] [Thread-2 (]: Began running node model.Analytics.CUSTOMER_STG
+[0m00:59:11.650758 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.Analytics.CUSTOMER_STG'
+[0m00:59:11.650758 [debug] [Thread-2 (]: Began compiling node model.Analytics.CUSTOMER_STG
+[0m00:59:11.653765 [debug] [Thread-1 (]: Writing injected SQL for node "model.Analytics.CUSTOMERORDER"
+[0m00:59:11.655763 [debug] [Thread-2 (]: Writing injected SQL for node "model.Analytics.CUSTOMER_STG"
+[0m00:59:11.655763 [debug] [Thread-3 (]: Began running node model.Analytics.ORDERITEM_STG
+[0m00:59:11.656725 [debug] [Thread-4 (]: Began running node model.Analytics.ORDER_STG
+[0m00:59:11.657472 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.Analytics.ORDERITEM_STG'
+[0m00:59:11.658479 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.Analytics.ORDER_STG'
+[0m00:59:11.659483 [debug] [Thread-3 (]: Began compiling node model.Analytics.ORDERITEM_STG
+[0m00:59:11.660504 [debug] [Thread-4 (]: Began compiling node model.Analytics.ORDER_STG
+[0m00:59:11.662484 [debug] [Thread-3 (]: Writing injected SQL for node "model.Analytics.ORDERITEM_STG"
+[0m00:59:11.663494 [debug] [Thread-2 (]: Began executing node model.Analytics.CUSTOMER_STG
+[0m00:59:11.663494 [debug] [Thread-1 (]: Began executing node model.Analytics.CUSTOMERORDER
+[0m00:59:11.665486 [debug] [Thread-4 (]: Writing injected SQL for node "model.Analytics.ORDER_STG"
+[0m00:59:11.666565 [debug] [Thread-2 (]: Finished running node model.Analytics.CUSTOMER_STG
+[0m00:59:11.667531 [debug] [Thread-1 (]: Finished running node model.Analytics.CUSTOMERORDER
+[0m00:59:11.668483 [debug] [Thread-2 (]: Began running node seed.Analytics.SALESTARGET
+[0m00:59:11.669487 [debug] [Thread-3 (]: Began executing node model.Analytics.ORDERITEM_STG
+[0m00:59:11.670487 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.Analytics.CUSTOMER_STG, now seed.Analytics.SALESTARGET)
+[0m00:59:11.671482 [debug] [Thread-3 (]: Finished running node model.Analytics.ORDERITEM_STG
+[0m00:59:11.672860 [debug] [Thread-2 (]: Began compiling node seed.Analytics.SALESTARGET
+[0m00:59:11.674572 [debug] [Thread-2 (]: Began executing node seed.Analytics.SALESTARGET
+[0m00:59:11.675573 [debug] [Thread-4 (]: Began executing node model.Analytics.ORDER_STG
+[0m00:59:11.676571 [debug] [Thread-2 (]: Finished running node seed.Analytics.SALESTARGET
+[0m00:59:11.676571 [debug] [Thread-4 (]: Finished running node model.Analytics.ORDER_STG
+[0m00:59:11.677661 [debug] [Thread-1 (]: Began running node model.Analytics.ORDER_FACT
+[0m00:59:11.678690 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Analytics.CUSTOMERORDER, now model.Analytics.ORDER_FACT)
+[0m00:59:11.678690 [debug] [Thread-1 (]: Began compiling node model.Analytics.ORDER_FACT
+[0m00:59:11.680667 [debug] [Thread-1 (]: Writing injected SQL for node "model.Analytics.ORDER_FACT"
+[0m00:59:11.682582 [debug] [Thread-1 (]: Began executing node model.Analytics.ORDER_FACT
+[0m00:59:11.683577 [debug] [Thread-1 (]: Finished running node model.Analytics.ORDER_FACT
+[0m00:59:11.684578 [debug] [Thread-2 (]: Began running node model.Analytics.CUSTOMERREVENUE
+[0m00:59:11.684578 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly seed.Analytics.SALESTARGET, now model.Analytics.CUSTOMERREVENUE)
+[0m00:59:11.685675 [debug] [Thread-2 (]: Began compiling node model.Analytics.CUSTOMERREVENUE
+[0m00:59:11.687670 [debug] [Thread-2 (]: Writing injected SQL for node "model.Analytics.CUSTOMERREVENUE"
+[0m00:59:11.689577 [debug] [Thread-2 (]: Began executing node model.Analytics.CUSTOMERREVENUE
+[0m00:59:11.690576 [debug] [Thread-2 (]: Finished running node model.Analytics.CUSTOMERREVENUE
+[0m00:59:11.692576 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:59:11.692576 [debug] [MainThread]: Connection 'list_EMART_OMS_L2_PROCESSING' was left open.
+[0m00:59:11.692576 [debug] [MainThread]: On list_EMART_OMS_L2_PROCESSING: Close
+[0m00:59:11.778160 [debug] [MainThread]: Connection 'list_EMART_OMS_L3_CONSUMPTION' was left open.
+[0m00:59:11.779116 [debug] [MainThread]: On list_EMART_OMS_L3_CONSUMPTION: Close
+[0m00:59:11.857679 [debug] [MainThread]: Connection 'model.Analytics.ORDER_FACT' was properly closed.
+[0m00:59:11.858648 [debug] [MainThread]: Connection 'model.Analytics.CUSTOMERREVENUE' was properly closed.
+[0m00:59:11.858648 [debug] [MainThread]: Connection 'model.Analytics.ORDERITEM_STG' was properly closed.
+[0m00:59:11.859681 [debug] [MainThread]: Connection 'model.Analytics.ORDER_STG' was properly closed.
+[0m00:59:11.861693 [debug] [MainThread]: Command end result
+[0m00:59:11.880600 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\bkumar116\OneDrive - PwC\Documents\DBT\Analytics\target\manifest.json
+[0m00:59:11.883594 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\bkumar116\OneDrive - PwC\Documents\DBT\Analytics\target\semantic_manifest.json
+[0m00:59:11.892599 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\bkumar116\OneDrive - PwC\Documents\DBT\Analytics\target\run_results.json
+[0m00:59:11.894702 [debug] [MainThread]: Command `dbt compile` succeeded at 00:59:11.894702 after 5.50 seconds
+[0m00:59:11.895596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217A4CFAF90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217A4CFB080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217A4E242C0>]}
+[0m00:59:11.895596 [debug] [MainThread]: Flushing usage events
+[0m00:59:12.782144 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:59:21.660871 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2BB8D8B60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2BB282ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2BB7030E0>]}
+
+
+============================== 00:59:21.666872 | baf61330-c1d0-4b68-acc1-471bbea05941 ==============================
+[0m00:59:21.666872 [info ] [MainThread]: Running with dbt=1.9.4
+[0m00:59:21.667875 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\bkumar116\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\bkumar116\\OneDrive - PwC\\Documents\\DBT\\Analytics\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt seed --select SALESTARGET', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m00:59:23.002039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'baf61330-c1d0-4b68-acc1-471bbea05941', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2CB578740>]}
+[0m00:59:23.051584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'baf61330-c1d0-4b68-acc1-471bbea05941', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2BB937380>]}
+[0m00:59:23.053631 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m00:59:23.446932 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m00:59:23.578088 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:59:23.578088 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:59:23.604999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'baf61330-c1d0-4b68-acc1-471bbea05941', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2CDB6F7A0>]}
+[0m00:59:23.666465 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\bkumar116\OneDrive - PwC\Documents\DBT\Analytics\target\manifest.json
+[0m00:59:23.674071 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\bkumar116\OneDrive - PwC\Documents\DBT\Analytics\target\semantic_manifest.json
+[0m00:59:23.721343 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'baf61330-c1d0-4b68-acc1-471bbea05941', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2CDF89220>]}
+[0m00:59:23.722343 [info ] [MainThread]: Found 6 models, 1 seed, 477 macros
+[0m00:59:23.723347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'baf61330-c1d0-4b68-acc1-471bbea05941', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2CDB6E390>]}
+[0m00:59:23.725354 [info ] [MainThread]: 
+[0m00:59:23.726344 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m00:59:23.726344 [info ] [MainThread]: 
+[0m00:59:23.728344 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m00:59:23.729347 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EMART_OMS'
+[0m00:59:23.822221 [debug] [ThreadPool]: Using snowflake connection "list_EMART_OMS"
+[0m00:59:23.823215 [debug] [ThreadPool]: On list_EMART_OMS: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Analytics", "target_name": "dev", "connection_name": "list_EMART_OMS"} */
+show terse schemas in database EMART_OMS
+    limit 10000
+[0m00:59:23.823215 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:59:24.728800 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.905 seconds
+[0m00:59:24.740886 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EMART_OMS_L2_PROCESSING'
+[0m00:59:24.753509 [debug] [ThreadPool]: Using snowflake connection "list_EMART_OMS_L2_PROCESSING"
+[0m00:59:24.753509 [debug] [ThreadPool]: On list_EMART_OMS_L2_PROCESSING: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Analytics", "target_name": "dev", "connection_name": "list_EMART_OMS_L2_PROCESSING"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m00:59:24.753509 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:59:24.755602 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EMART_OMS_L3_CONSUMPTION'
+[0m00:59:24.757608 [debug] [ThreadPool]: Using snowflake connection "list_EMART_OMS_L3_CONSUMPTION"
+[0m00:59:24.758615 [debug] [ThreadPool]: On list_EMART_OMS_L3_CONSUMPTION: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Analytics", "target_name": "dev", "connection_name": "list_EMART_OMS_L3_CONSUMPTION"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m00:59:24.758615 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:59:25.553737 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.795 seconds
+[0m00:59:25.561753 [debug] [ThreadPool]: Using snowflake connection "list_EMART_OMS_L3_CONSUMPTION"
+[0m00:59:25.561753 [debug] [ThreadPool]: On list_EMART_OMS_L3_CONSUMPTION: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Analytics", "target_name": "dev", "connection_name": "list_EMART_OMS_L3_CONSUMPTION"} */
+show objects in EMART_OMS.L3_CONSUMPTION
+    limit 10000
+    
+;
+[0m00:59:25.651111 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.088 seconds
+[0m00:59:25.653110 [debug] [ThreadPool]: Using snowflake connection "list_EMART_OMS_L3_CONSUMPTION"
+[0m00:59:25.653623 [debug] [ThreadPool]: On list_EMART_OMS_L3_CONSUMPTION: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Analytics", "target_name": "dev", "connection_name": "list_EMART_OMS_L3_CONSUMPTION"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m00:59:26.150487 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 1.397 seconds
+[0m00:59:26.152629 [debug] [ThreadPool]: Using snowflake connection "list_EMART_OMS_L2_PROCESSING"
+[0m00:59:26.152629 [debug] [ThreadPool]: On list_EMART_OMS_L2_PROCESSING: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Analytics", "target_name": "dev", "connection_name": "list_EMART_OMS_L2_PROCESSING"} */
+show objects in EMART_OMS.L2_PROCESSING
+    limit 10000
+    
+;
+[0m00:59:26.172601 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.518 seconds
+[0m00:59:26.250641 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.097 seconds
+[0m00:59:26.252642 [debug] [ThreadPool]: Using snowflake connection "list_EMART_OMS_L2_PROCESSING"
+[0m00:59:26.252642 [debug] [ThreadPool]: On list_EMART_OMS_L2_PROCESSING: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Analytics", "target_name": "dev", "connection_name": "list_EMART_OMS_L2_PROCESSING"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m00:59:26.309984 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.057 seconds
+[0m00:59:26.313176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'baf61330-c1d0-4b68-acc1-471bbea05941', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2B90598B0>]}
+[0m00:59:26.319394 [debug] [Thread-1 (]: Began running node seed.Analytics.SALESTARGET
+[0m00:59:26.320445 [info ] [Thread-1 (]: 1 of 1 START seed file L3_CONSUMPTION.SALESTARGET .............................. [RUN]
+[0m00:59:26.320445 [debug] [Thread-1 (]: Acquiring new snowflake connection 'seed.Analytics.SALESTARGET'
+[0m00:59:26.321553 [debug] [Thread-1 (]: Began compiling node seed.Analytics.SALESTARGET
+[0m00:59:26.322562 [debug] [Thread-1 (]: Began executing node seed.Analytics.SALESTARGET
+[0m00:59:26.452825 [debug] [Thread-1 (]: Using snowflake connection "seed.Analytics.SALESTARGET"
+[0m00:59:26.452825 [debug] [Thread-1 (]: On seed.Analytics.SALESTARGET: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Analytics", "target_name": "dev", "node_id": "seed.Analytics.SALESTARGET"} */
+create table EMART_OMS.L3_CONSUMPTION.SALESTARGET (STOREID integer, SALESTARGET integer)
+[0m00:59:26.454433 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m00:59:27.204524 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.750 seconds
+[0m00:59:27.224529 [debug] [Thread-1 (]: Using snowflake connection "seed.Analytics.SALESTARGET"
+[0m00:59:27.225529 [debug] [Thread-1 (]: On seed.Analytics.SALESTARGET: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Analytics", "target_name": "dev", "node_id": "seed.Analytics.SALESTARGET"} */
+BEGIN
+[0m00:59:27.297120 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.071 seconds
+[0m00:59:27.298125 [debug] [Thread-1 (]: Using snowflake connection "seed.Analytics.SALESTARGET"
+[0m00:59:27.299117 [debug] [Thread-1 (]: On seed.Analytics.SALESTARGET: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Analytics", "target_name": "dev", "node_id": "seed.Analytics.SALESTARGET"} */
+insert into EMART_OMS.L3_CONSUMPTION.SALESTARGET (STOREID,  SALESTARGET) values
+            (%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s)...
+[0m00:59:27.966382 [debug] [Thread-1 (]: SQL status: SUCCESS 19 in 0.666 seconds
+[0m00:59:27.966382 [debug] [Thread-1 (]: Using snowflake connection "seed.Analytics.SALESTARGET"
+[0m00:59:27.967381 [debug] [Thread-1 (]: On seed.Analytics.SALESTARGET: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Analytics", "target_name": "dev", "node_id": "seed.Analytics.SALESTARGET"} */
+COMMIT
+[0m00:59:28.170105 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.203 seconds
+[0m00:59:28.174901 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.Analytics.SALESTARGET"
+[0m00:59:28.206316 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'baf61330-c1d0-4b68-acc1-471bbea05941', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2BB280590>]}
+[0m00:59:28.207315 [info ] [Thread-1 (]: 1 of 1 OK loaded seed file L3_CONSUMPTION.SALESTARGET .......................... [[32mINSERT 19[0m in 1.88s]
+[0m00:59:28.208318 [debug] [Thread-1 (]: Finished running node seed.Analytics.SALESTARGET
+[0m00:59:28.210320 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:59:28.211325 [debug] [MainThread]: Connection 'list_EMART_OMS' was left open.
+[0m00:59:28.211325 [debug] [MainThread]: On list_EMART_OMS: Close
+[0m00:59:28.480156 [debug] [MainThread]: Connection 'list_EMART_OMS_L2_PROCESSING' was left open.
+[0m00:59:28.481160 [debug] [MainThread]: On list_EMART_OMS_L2_PROCESSING: Close
+[0m00:59:28.550701 [debug] [MainThread]: Connection 'list_EMART_OMS_L3_CONSUMPTION' was left open.
+[0m00:59:28.550701 [debug] [MainThread]: On list_EMART_OMS_L3_CONSUMPTION: Close
+[0m00:59:28.619402 [debug] [MainThread]: Connection 'seed.Analytics.SALESTARGET' was left open.
+[0m00:59:28.619402 [debug] [MainThread]: On seed.Analytics.SALESTARGET: Close
+[0m00:59:28.860166 [info ] [MainThread]: 
+[0m00:59:28.861164 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 5.13 seconds (5.13s).
+[0m00:59:28.863165 [debug] [MainThread]: Command end result
+[0m00:59:28.896171 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\bkumar116\OneDrive - PwC\Documents\DBT\Analytics\target\manifest.json
+[0m00:59:28.900172 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\bkumar116\OneDrive - PwC\Documents\DBT\Analytics\target\semantic_manifest.json
+[0m00:59:28.913177 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\bkumar116\OneDrive - PwC\Documents\DBT\Analytics\target\run_results.json
+[0m00:59:28.914176 [info ] [MainThread]: 
+[0m00:59:28.916187 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m00:59:28.920175 [info ] [MainThread]: 
+[0m00:59:28.921179 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m00:59:28.924188 [debug] [MainThread]: Command `dbt seed` succeeded at 00:59:28.924188 after 7.44 seconds
+[0m00:59:28.925187 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2BB640FE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2BAE2D370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B2CB5A14C0>]}
+[0m00:59:28.926188 [debug] [MainThread]: Flushing usage events
+[0m00:59:29.912016 [debug] [MainThread]: An error was encountered while trying to flush usage events
