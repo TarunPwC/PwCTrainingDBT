@@ -1,0 +1,22 @@
+
+  
+    
+
+create or replace table EMART_OMS.L2_PROCESSING.ORDERITEM_STG
+    
+
+    
+    as (SELECT
+    ORDERITEMID,
+    ORDERID,
+    PRODUCTID,
+    QUANTITY,
+    UNITPRICE,
+    QUANTITY * UNITPRICE AS TOTALPRICE,
+    UPDATED_AT
+FROM EMART_OMS.L1_LANDING.ORDERITEMS
+    )
+;
+
+
+  

@@ -1,4 +1,12 @@
-SELECT
+
+  
+    
+
+create or replace table EMART_OMS.L2_PROCESSING.ORDER_STG
+    
+
+    
+    as (SELECT
     ORDERID,
     ORDERDATE,
     CUSTOMERID,
@@ -13,4 +21,9 @@ SELECT
         ELSE NULL
     END AS STATUSDESC,
     UPDATED_AT
-FROM {{source('landing', 'ord')}}
+FROM EMART_OMS.L1_LANDING.ORDERS
+    )
+;
+
+
+  

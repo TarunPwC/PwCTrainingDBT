@@ -1,0 +1,4 @@
+SELECT
+    OD.STOREID
+FROM 
+    {{ ref('ORDER_STG')}} OD
