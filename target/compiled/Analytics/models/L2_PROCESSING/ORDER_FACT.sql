@@ -1,4 +1,3 @@
-
 SELECT
     O.ORDERID,
     O.ORDERDATE,
