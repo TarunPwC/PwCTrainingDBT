@@ -12180,3 +12180,408 @@ alter session unset quoted_identifiers_ignore_case;
 [0m04:25:43.662127 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDA6A30E30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDA94B6C00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BDBBA83A10>]}
 [0m04:25:43.662127 [debug] [MainThread]: Flushing usage events
 [0m04:25:44.567939 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:51:20.343174 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFB5F30D40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFB89B58E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFB89B59D0>]}
+
+
+============================== 13:51:20.352545 | 0362dd24-2eb6-4c8f-a1c5-39bb5820f674 ==============================
+[0m13:51:20.352545 [info ] [MainThread]: Running with dbt=1.9.4
+[0m13:51:20.353455 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\bkumar116\\OneDrive - PwC\\Documents\\DBT\\Analytics\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\bkumar116\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt compile', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:51:24.767886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0362dd24-2eb6-4c8f-a1c5-39bb5820f674', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFB903F8F0>]}
+[0m13:51:24.833480 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0362dd24-2eb6-4c8f-a1c5-39bb5820f674', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFC8D87440>]}
+[0m13:51:24.836485 [info ] [MainThread]: Registered adapter: snowflake=1.9.4
+[0m13:51:25.650272 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m13:51:28.177653 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:51:28.178680 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:51:28.241770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0362dd24-2eb6-4c8f-a1c5-39bb5820f674', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFCABAD370>]}
+[0m13:51:28.358685 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\bkumar116\OneDrive - PwC\Documents\DBT\Analytics\target\manifest.json
+[0m13:51:28.385566 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\bkumar116\OneDrive - PwC\Documents\DBT\Analytics\target\semantic_manifest.json
+[0m13:51:28.487963 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0362dd24-2eb6-4c8f-a1c5-39bb5820f674', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFCB0102F0>]}
+[0m13:51:28.489045 [info ] [MainThread]: Found 9 models, 2 analyses, 1 seed, 39 data tests, 17 sources, 478 macros
+[0m13:51:28.491689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0362dd24-2eb6-4c8f-a1c5-39bb5820f674', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFCADC9C70>]}
+[0m13:51:28.500489 [info ] [MainThread]: 
+[0m13:51:28.501496 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:51:28.503506 [info ] [MainThread]: 
+[0m13:51:28.505503 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m13:51:28.514034 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EMART_OMS_L2_PROCESSING'
+[0m13:51:28.523725 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_EMART_OMS_L3_CONSUMPTION'
+[0m13:51:32.988549 [debug] [ThreadPool]: Using snowflake connection "list_EMART_OMS_L2_PROCESSING"
+[0m13:51:32.988549 [debug] [ThreadPool]: On list_EMART_OMS_L2_PROCESSING: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Analytics", "target_name": "dev", "connection_name": "list_EMART_OMS_L2_PROCESSING"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m13:51:32.988549 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:51:32.990220 [debug] [ThreadPool]: Using snowflake connection "list_EMART_OMS_L3_CONSUMPTION"
+[0m13:51:32.990220 [debug] [ThreadPool]: On list_EMART_OMS_L3_CONSUMPTION: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Analytics", "target_name": "dev", "connection_name": "list_EMART_OMS_L3_CONSUMPTION"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m13:51:32.991065 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:51:34.349220 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 1.359 seconds
+[0m13:51:34.355001 [debug] [ThreadPool]: Using snowflake connection "list_EMART_OMS_L2_PROCESSING"
+[0m13:51:34.355957 [debug] [ThreadPool]: On list_EMART_OMS_L2_PROCESSING: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Analytics", "target_name": "dev", "connection_name": "list_EMART_OMS_L2_PROCESSING"} */
+show objects in EMART_OMS.L2_PROCESSING
+    limit 10000
+    
+;
+[0m13:51:34.436544 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 1.446 seconds
+[0m13:51:34.440240 [debug] [ThreadPool]: Using snowflake connection "list_EMART_OMS_L3_CONSUMPTION"
+[0m13:51:34.440240 [debug] [ThreadPool]: On list_EMART_OMS_L3_CONSUMPTION: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Analytics", "target_name": "dev", "connection_name": "list_EMART_OMS_L3_CONSUMPTION"} */
+show objects in EMART_OMS.L3_CONSUMPTION
+    limit 10000
+    
+;
+[0m13:51:34.522417 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.166 seconds
+[0m13:51:34.524469 [debug] [ThreadPool]: Using snowflake connection "list_EMART_OMS_L2_PROCESSING"
+[0m13:51:34.525417 [debug] [ThreadPool]: On list_EMART_OMS_L2_PROCESSING: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Analytics", "target_name": "dev", "connection_name": "list_EMART_OMS_L2_PROCESSING"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m13:51:34.615615 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.090 seconds
+[0m13:51:34.628943 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 0.188 seconds
+[0m13:51:34.630970 [debug] [ThreadPool]: Using snowflake connection "list_EMART_OMS_L3_CONSUMPTION"
+[0m13:51:34.631969 [debug] [ThreadPool]: On list_EMART_OMS_L3_CONSUMPTION: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "Analytics", "target_name": "dev", "connection_name": "list_EMART_OMS_L3_CONSUMPTION"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m13:51:34.700168 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.068 seconds
+[0m13:51:34.703028 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0362dd24-2eb6-4c8f-a1c5-39bb5820f674', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFCADA3E00>]}
+[0m13:51:34.726368 [debug] [Thread-1 (]: Began running node analysis.Analytics.PRODUCTANALYSIS
+[0m13:51:34.727348 [debug] [Thread-2 (]: Began running node model.Analytics.CUSTOMERORDER
+[0m13:51:34.728351 [debug] [Thread-3 (]: Began running node model.Analytics.CUSTOMER_STG
+[0m13:51:34.729343 [debug] [Thread-4 (]: Began running node model.Analytics.ORDERITEM_STG
+[0m13:51:34.729343 [debug] [Thread-1 (]: Acquiring new snowflake connection 'analysis.Analytics.PRODUCTANALYSIS'
+[0m13:51:34.731024 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.Analytics.CUSTOMERORDER'
+[0m13:51:34.733095 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.Analytics.CUSTOMER_STG'
+[0m13:51:34.734116 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.Analytics.ORDERITEM_STG'
+[0m13:51:34.734116 [debug] [Thread-1 (]: Began compiling node analysis.Analytics.PRODUCTANALYSIS
+[0m13:51:34.735155 [debug] [Thread-2 (]: Began compiling node model.Analytics.CUSTOMERORDER
+[0m13:51:34.735155 [debug] [Thread-3 (]: Began compiling node model.Analytics.CUSTOMER_STG
+[0m13:51:34.736156 [debug] [Thread-4 (]: Began compiling node model.Analytics.ORDERITEM_STG
+[0m13:51:34.743575 [debug] [Thread-1 (]: Writing injected SQL for node "analysis.Analytics.PRODUCTANALYSIS"
+[0m13:51:34.747575 [debug] [Thread-2 (]: Writing injected SQL for node "model.Analytics.CUSTOMERORDER"
+[0m13:51:34.751087 [debug] [Thread-3 (]: Writing injected SQL for node "model.Analytics.CUSTOMER_STG"
+[0m13:51:34.754144 [debug] [Thread-4 (]: Writing injected SQL for node "model.Analytics.ORDERITEM_STG"
+[0m13:51:34.756102 [debug] [Thread-2 (]: Began executing node model.Analytics.CUSTOMERORDER
+[0m13:51:34.759105 [debug] [Thread-2 (]: Finished running node model.Analytics.CUSTOMERORDER
+[0m13:51:34.760097 [debug] [Thread-1 (]: Began executing node analysis.Analytics.PRODUCTANALYSIS
+[0m13:51:34.760612 [debug] [Thread-2 (]: Began running node model.Analytics.ORDER_STG
+[0m13:51:34.763137 [debug] [Thread-1 (]: Finished running node analysis.Analytics.PRODUCTANALYSIS
+[0m13:51:34.764079 [debug] [Thread-3 (]: Began executing node model.Analytics.CUSTOMER_STG
+[0m13:51:34.765076 [debug] [Thread-4 (]: Began executing node model.Analytics.ORDERITEM_STG
+[0m13:51:34.765076 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.Analytics.CUSTOMERORDER, now model.Analytics.ORDER_STG)
+[0m13:51:34.766076 [debug] [Thread-1 (]: Began running node model.Analytics.PRODUCTPERFORMANCE
+[0m13:51:34.767077 [debug] [Thread-3 (]: Finished running node model.Analytics.CUSTOMER_STG
+[0m13:51:34.768078 [debug] [Thread-4 (]: Finished running node model.Analytics.ORDERITEM_STG
+[0m13:51:34.768078 [debug] [Thread-2 (]: Began compiling node model.Analytics.ORDER_STG
+[0m13:51:34.769076 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly analysis.Analytics.PRODUCTANALYSIS, now model.Analytics.PRODUCTPERFORMANCE)
+[0m13:51:34.770075 [debug] [Thread-3 (]: Began running node model.Analytics.PRODUCTSALES
+[0m13:51:34.770075 [debug] [Thread-4 (]: Began running node seed.Analytics.SALESTARGET
+[0m13:51:34.773540 [debug] [Thread-2 (]: Writing injected SQL for node "model.Analytics.ORDER_STG"
+[0m13:51:34.773540 [debug] [Thread-1 (]: Began compiling node model.Analytics.PRODUCTPERFORMANCE
+[0m13:51:34.774554 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.Analytics.CUSTOMER_STG, now model.Analytics.PRODUCTSALES)
+[0m13:51:34.775546 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.Analytics.ORDERITEM_STG, now seed.Analytics.SALESTARGET)
+[0m13:51:34.777544 [debug] [Thread-1 (]: Writing injected SQL for node "model.Analytics.PRODUCTPERFORMANCE"
+[0m13:51:34.778544 [debug] [Thread-3 (]: Began compiling node model.Analytics.PRODUCTSALES
+[0m13:51:34.778544 [debug] [Thread-4 (]: Began compiling node seed.Analytics.SALESTARGET
+[0m13:51:34.783085 [debug] [Thread-3 (]: Writing injected SQL for node "model.Analytics.PRODUCTSALES"
+[0m13:51:34.785090 [debug] [Thread-4 (]: Began executing node seed.Analytics.SALESTARGET
+[0m13:51:34.786105 [debug] [Thread-2 (]: Began executing node model.Analytics.ORDER_STG
+[0m13:51:34.788505 [debug] [Thread-4 (]: Finished running node seed.Analytics.SALESTARGET
+[0m13:51:34.790075 [debug] [Thread-2 (]: Finished running node model.Analytics.ORDER_STG
+[0m13:51:34.791032 [debug] [Thread-4 (]: Began running node test.Analytics.source_not_null_landing_EMP_EMAIL.ad435de808
+[0m13:51:34.792021 [debug] [Thread-1 (]: Began executing node model.Analytics.PRODUCTPERFORMANCE
+[0m13:51:34.793028 [debug] [Thread-2 (]: Began running node test.Analytics.source_not_null_landing_EMP_EMPLOYEEID.a9da67473d
+[0m13:51:34.794030 [debug] [Thread-3 (]: Began executing node model.Analytics.PRODUCTSALES
+[0m13:51:34.794030 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly seed.Analytics.SALESTARGET, now test.Analytics.source_not_null_landing_EMP_EMAIL.ad435de808)
+[0m13:51:34.796065 [debug] [Thread-1 (]: Finished running node model.Analytics.PRODUCTPERFORMANCE
+[0m13:51:34.797027 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.Analytics.ORDER_STG, now test.Analytics.source_not_null_landing_EMP_EMPLOYEEID.a9da67473d)
+[0m13:51:34.798026 [debug] [Thread-3 (]: Finished running node model.Analytics.PRODUCTSALES
+[0m13:51:34.798026 [debug] [Thread-4 (]: Began compiling node test.Analytics.source_not_null_landing_EMP_EMAIL.ad435de808
+[0m13:51:34.799031 [debug] [Thread-1 (]: Began running node test.Analytics.source_not_null_landing_EMP_FIRSTNAME.7db0e2a2e4
+[0m13:51:34.799031 [debug] [Thread-2 (]: Began compiling node test.Analytics.source_not_null_landing_EMP_EMPLOYEEID.a9da67473d
+[0m13:51:34.800084 [debug] [Thread-3 (]: Began running node test.Analytics.source_not_null_landing_EMP_LASTNAME.4ee8a9a676
+[0m13:51:34.813125 [debug] [Thread-4 (]: Writing injected SQL for node "test.Analytics.source_not_null_landing_EMP_EMAIL.ad435de808"
+[0m13:51:34.814125 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.Analytics.PRODUCTPERFORMANCE, now test.Analytics.source_not_null_landing_EMP_FIRSTNAME.7db0e2a2e4)
+[0m13:51:34.817125 [debug] [Thread-2 (]: Writing injected SQL for node "test.Analytics.source_not_null_landing_EMP_EMPLOYEEID.a9da67473d"
+[0m13:51:34.818126 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.Analytics.PRODUCTSALES, now test.Analytics.source_not_null_landing_EMP_LASTNAME.4ee8a9a676)
+[0m13:51:34.819125 [debug] [Thread-1 (]: Began compiling node test.Analytics.source_not_null_landing_EMP_FIRSTNAME.7db0e2a2e4
+[0m13:51:34.820124 [debug] [Thread-3 (]: Began compiling node test.Analytics.source_not_null_landing_EMP_LASTNAME.4ee8a9a676
+[0m13:51:34.826055 [debug] [Thread-1 (]: Writing injected SQL for node "test.Analytics.source_not_null_landing_EMP_FIRSTNAME.7db0e2a2e4"
+[0m13:51:34.831883 [debug] [Thread-3 (]: Writing injected SQL for node "test.Analytics.source_not_null_landing_EMP_LASTNAME.4ee8a9a676"
+[0m13:51:34.832760 [debug] [Thread-4 (]: Began executing node test.Analytics.source_not_null_landing_EMP_EMAIL.ad435de808
+[0m13:51:34.834764 [debug] [Thread-4 (]: Finished running node test.Analytics.source_not_null_landing_EMP_EMAIL.ad435de808
+[0m13:51:34.835831 [debug] [Thread-2 (]: Began executing node test.Analytics.source_not_null_landing_EMP_EMPLOYEEID.a9da67473d
+[0m13:51:34.836858 [debug] [Thread-4 (]: Began running node test.Analytics.source_not_null_landing_STORE_STOREID.89d179c407
+[0m13:51:34.837843 [debug] [Thread-2 (]: Finished running node test.Analytics.source_not_null_landing_EMP_EMPLOYEEID.a9da67473d
+[0m13:51:34.838848 [debug] [Thread-3 (]: Began executing node test.Analytics.source_not_null_landing_EMP_LASTNAME.4ee8a9a676
+[0m13:51:34.838848 [debug] [Thread-1 (]: Began executing node test.Analytics.source_not_null_landing_EMP_FIRSTNAME.7db0e2a2e4
+[0m13:51:34.840354 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.Analytics.source_not_null_landing_EMP_EMAIL.ad435de808, now test.Analytics.source_not_null_landing_STORE_STOREID.89d179c407)
+[0m13:51:34.841363 [debug] [Thread-2 (]: Began running node test.Analytics.source_not_null_landing_SUPP_SUPPLIERID.93826b282c
+[0m13:51:34.842363 [debug] [Thread-3 (]: Finished running node test.Analytics.source_not_null_landing_EMP_LASTNAME.4ee8a9a676
+[0m13:51:34.843363 [debug] [Thread-1 (]: Finished running node test.Analytics.source_not_null_landing_EMP_FIRSTNAME.7db0e2a2e4
+[0m13:51:34.844364 [debug] [Thread-4 (]: Began compiling node test.Analytics.source_not_null_landing_STORE_STOREID.89d179c407
+[0m13:51:34.844364 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.Analytics.source_not_null_landing_EMP_EMPLOYEEID.a9da67473d, now test.Analytics.source_not_null_landing_SUPP_SUPPLIERID.93826b282c)
+[0m13:51:34.845362 [debug] [Thread-3 (]: Began running node test.Analytics.source_not_null_landing_cust_CUSTOMERID.0c7316abe7
+[0m13:51:34.846363 [debug] [Thread-1 (]: Began running node test.Analytics.source_not_null_landing_cust_FIRSTNAME.8f88ffaf45
+[0m13:51:34.850362 [debug] [Thread-4 (]: Writing injected SQL for node "test.Analytics.source_not_null_landing_STORE_STOREID.89d179c407"
+[0m13:51:34.850867 [debug] [Thread-2 (]: Began compiling node test.Analytics.source_not_null_landing_SUPP_SUPPLIERID.93826b282c
+[0m13:51:34.850867 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.Analytics.source_not_null_landing_EMP_LASTNAME.4ee8a9a676, now test.Analytics.source_not_null_landing_cust_CUSTOMERID.0c7316abe7)
+[0m13:51:34.851899 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Analytics.source_not_null_landing_EMP_FIRSTNAME.7db0e2a2e4, now test.Analytics.source_not_null_landing_cust_FIRSTNAME.8f88ffaf45)
+[0m13:51:34.855881 [debug] [Thread-2 (]: Writing injected SQL for node "test.Analytics.source_not_null_landing_SUPP_SUPPLIERID.93826b282c"
+[0m13:51:34.856880 [debug] [Thread-3 (]: Began compiling node test.Analytics.source_not_null_landing_cust_CUSTOMERID.0c7316abe7
+[0m13:51:34.856880 [debug] [Thread-1 (]: Began compiling node test.Analytics.source_not_null_landing_cust_FIRSTNAME.8f88ffaf45
+[0m13:51:34.861418 [debug] [Thread-3 (]: Writing injected SQL for node "test.Analytics.source_not_null_landing_cust_CUSTOMERID.0c7316abe7"
+[0m13:51:34.865423 [debug] [Thread-1 (]: Writing injected SQL for node "test.Analytics.source_not_null_landing_cust_FIRSTNAME.8f88ffaf45"
+[0m13:51:34.866427 [debug] [Thread-4 (]: Began executing node test.Analytics.source_not_null_landing_STORE_STOREID.89d179c407
+[0m13:51:34.868433 [debug] [Thread-4 (]: Finished running node test.Analytics.source_not_null_landing_STORE_STOREID.89d179c407
+[0m13:51:34.868433 [debug] [Thread-4 (]: Began running node test.Analytics.source_not_null_landing_cust_LASTNAME.7243ddefd6
+[0m13:51:34.871056 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.Analytics.source_not_null_landing_STORE_STOREID.89d179c407, now test.Analytics.source_not_null_landing_cust_LASTNAME.7243ddefd6)
+[0m13:51:34.875079 [debug] [Thread-2 (]: Began executing node test.Analytics.source_not_null_landing_SUPP_SUPPLIERID.93826b282c
+[0m13:51:34.875079 [debug] [Thread-4 (]: Began compiling node test.Analytics.source_not_null_landing_cust_LASTNAME.7243ddefd6
+[0m13:51:34.879441 [debug] [Thread-2 (]: Finished running node test.Analytics.source_not_null_landing_SUPP_SUPPLIERID.93826b282c
+[0m13:51:34.882036 [debug] [Thread-1 (]: Began executing node test.Analytics.source_not_null_landing_cust_FIRSTNAME.8f88ffaf45
+[0m13:51:34.888450 [debug] [Thread-4 (]: Writing injected SQL for node "test.Analytics.source_not_null_landing_cust_LASTNAME.7243ddefd6"
+[0m13:51:34.889980 [debug] [Thread-3 (]: Began executing node test.Analytics.source_not_null_landing_cust_CUSTOMERID.0c7316abe7
+[0m13:51:34.891011 [debug] [Thread-2 (]: Began running node test.Analytics.source_not_null_landing_ordItms_ORDERID.5becf154af
+[0m13:51:34.892021 [debug] [Thread-1 (]: Finished running node test.Analytics.source_not_null_landing_cust_FIRSTNAME.8f88ffaf45
+[0m13:51:34.892988 [debug] [Thread-3 (]: Finished running node test.Analytics.source_not_null_landing_cust_CUSTOMERID.0c7316abe7
+[0m13:51:34.893991 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.Analytics.source_not_null_landing_SUPP_SUPPLIERID.93826b282c, now test.Analytics.source_not_null_landing_ordItms_ORDERID.5becf154af)
+[0m13:51:34.894993 [debug] [Thread-1 (]: Began running node test.Analytics.source_not_null_landing_ordItms_ORDERITEMID.1c7d165f74
+[0m13:51:34.894993 [debug] [Thread-3 (]: Began running node test.Analytics.source_not_null_landing_ordItms_PRODUCTID.1bd038f21a
+[0m13:51:34.895999 [debug] [Thread-2 (]: Began compiling node test.Analytics.source_not_null_landing_ordItms_ORDERID.5becf154af
+[0m13:51:34.896987 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Analytics.source_not_null_landing_cust_FIRSTNAME.8f88ffaf45, now test.Analytics.source_not_null_landing_ordItms_ORDERITEMID.1c7d165f74)
+[0m13:51:34.896987 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.Analytics.source_not_null_landing_cust_CUSTOMERID.0c7316abe7, now test.Analytics.source_not_null_landing_ordItms_PRODUCTID.1bd038f21a)
+[0m13:51:34.900542 [debug] [Thread-2 (]: Writing injected SQL for node "test.Analytics.source_not_null_landing_ordItms_ORDERID.5becf154af"
+[0m13:51:34.901560 [debug] [Thread-1 (]: Began compiling node test.Analytics.source_not_null_landing_ordItms_ORDERITEMID.1c7d165f74
+[0m13:51:34.901560 [debug] [Thread-4 (]: Began executing node test.Analytics.source_not_null_landing_cust_LASTNAME.7243ddefd6
+[0m13:51:34.902550 [debug] [Thread-3 (]: Began compiling node test.Analytics.source_not_null_landing_ordItms_PRODUCTID.1bd038f21a
+[0m13:51:34.910099 [debug] [Thread-1 (]: Writing injected SQL for node "test.Analytics.source_not_null_landing_ordItms_ORDERITEMID.1c7d165f74"
+[0m13:51:34.911109 [debug] [Thread-4 (]: Finished running node test.Analytics.source_not_null_landing_cust_LASTNAME.7243ddefd6
+[0m13:51:34.915127 [debug] [Thread-3 (]: Writing injected SQL for node "test.Analytics.source_not_null_landing_ordItms_PRODUCTID.1bd038f21a"
+[0m13:51:34.916134 [debug] [Thread-4 (]: Began running node test.Analytics.source_not_null_landing_ord_CUSTOMERID.cc89701ce4
+[0m13:51:34.917113 [debug] [Thread-2 (]: Began executing node test.Analytics.source_not_null_landing_ordItms_ORDERID.5becf154af
+[0m13:51:34.919111 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.Analytics.source_not_null_landing_cust_LASTNAME.7243ddefd6, now test.Analytics.source_not_null_landing_ord_CUSTOMERID.cc89701ce4)
+[0m13:51:34.920621 [debug] [Thread-1 (]: Began executing node test.Analytics.source_not_null_landing_ordItms_ORDERITEMID.1c7d165f74
+[0m13:51:34.921629 [debug] [Thread-2 (]: Finished running node test.Analytics.source_not_null_landing_ordItms_ORDERID.5becf154af
+[0m13:51:34.922631 [debug] [Thread-4 (]: Began compiling node test.Analytics.source_not_null_landing_ord_CUSTOMERID.cc89701ce4
+[0m13:51:34.923637 [debug] [Thread-1 (]: Finished running node test.Analytics.source_not_null_landing_ordItms_ORDERITEMID.1c7d165f74
+[0m13:51:34.924638 [debug] [Thread-3 (]: Began executing node test.Analytics.source_not_null_landing_ordItms_PRODUCTID.1bd038f21a
+[0m13:51:34.924638 [debug] [Thread-2 (]: Began running node test.Analytics.source_not_null_landing_ord_EMPLOYEEID.4ec413c50f
+[0m13:51:34.931177 [debug] [Thread-4 (]: Writing injected SQL for node "test.Analytics.source_not_null_landing_ord_CUSTOMERID.cc89701ce4"
+[0m13:51:34.932200 [debug] [Thread-1 (]: Began running node test.Analytics.source_not_null_landing_ord_ORDERID.18b2f9709b
+[0m13:51:34.933189 [debug] [Thread-3 (]: Finished running node test.Analytics.source_not_null_landing_ordItms_PRODUCTID.1bd038f21a
+[0m13:51:34.934176 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.Analytics.source_not_null_landing_ordItms_ORDERID.5becf154af, now test.Analytics.source_not_null_landing_ord_EMPLOYEEID.4ec413c50f)
+[0m13:51:34.934176 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Analytics.source_not_null_landing_ordItms_ORDERITEMID.1c7d165f74, now test.Analytics.source_not_null_landing_ord_ORDERID.18b2f9709b)
+[0m13:51:34.935177 [debug] [Thread-3 (]: Began running node test.Analytics.source_not_null_landing_product_PRODUCTID.747ef14bf2
+[0m13:51:34.936177 [debug] [Thread-2 (]: Began compiling node test.Analytics.source_not_null_landing_ord_EMPLOYEEID.4ec413c50f
+[0m13:51:34.936177 [debug] [Thread-1 (]: Began compiling node test.Analytics.source_not_null_landing_ord_ORDERID.18b2f9709b
+[0m13:51:34.937194 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.Analytics.source_not_null_landing_ordItms_PRODUCTID.1bd038f21a, now test.Analytics.source_not_null_landing_product_PRODUCTID.747ef14bf2)
+[0m13:51:34.938179 [debug] [Thread-4 (]: Began executing node test.Analytics.source_not_null_landing_ord_CUSTOMERID.cc89701ce4
+[0m13:51:34.942698 [debug] [Thread-2 (]: Writing injected SQL for node "test.Analytics.source_not_null_landing_ord_EMPLOYEEID.4ec413c50f"
+[0m13:51:34.945697 [debug] [Thread-1 (]: Writing injected SQL for node "test.Analytics.source_not_null_landing_ord_ORDERID.18b2f9709b"
+[0m13:51:34.946699 [debug] [Thread-3 (]: Began compiling node test.Analytics.source_not_null_landing_product_PRODUCTID.747ef14bf2
+[0m13:51:34.947704 [debug] [Thread-4 (]: Finished running node test.Analytics.source_not_null_landing_ord_CUSTOMERID.cc89701ce4
+[0m13:51:34.955627 [debug] [Thread-3 (]: Writing injected SQL for node "test.Analytics.source_not_null_landing_product_PRODUCTID.747ef14bf2"
+[0m13:51:34.956629 [debug] [Thread-4 (]: Began running node test.Analytics.source_string_not_empty_landing_EMP_EMAIL.ad2a70cffa
+[0m13:51:34.958642 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.Analytics.source_not_null_landing_ord_CUSTOMERID.cc89701ce4, now test.Analytics.source_string_not_empty_landing_EMP_EMAIL.ad2a70cffa)
+[0m13:51:34.958642 [debug] [Thread-2 (]: Began executing node test.Analytics.source_not_null_landing_ord_EMPLOYEEID.4ec413c50f
+[0m13:51:34.960149 [debug] [Thread-1 (]: Began executing node test.Analytics.source_not_null_landing_ord_ORDERID.18b2f9709b
+[0m13:51:34.961186 [debug] [Thread-4 (]: Began compiling node test.Analytics.source_string_not_empty_landing_EMP_EMAIL.ad2a70cffa
+[0m13:51:34.963634 [debug] [Thread-2 (]: Finished running node test.Analytics.source_not_null_landing_ord_EMPLOYEEID.4ec413c50f
+[0m13:51:34.965638 [debug] [Thread-1 (]: Finished running node test.Analytics.source_not_null_landing_ord_ORDERID.18b2f9709b
+[0m13:51:34.966631 [debug] [Thread-3 (]: Began executing node test.Analytics.source_not_null_landing_product_PRODUCTID.747ef14bf2
+[0m13:51:34.974398 [debug] [Thread-4 (]: Writing injected SQL for node "test.Analytics.source_string_not_empty_landing_EMP_EMAIL.ad2a70cffa"
+[0m13:51:34.974398 [debug] [Thread-2 (]: Began running node test.Analytics.source_string_not_empty_landing_EMP_EMPLOYEEID.9ee56073d4
+[0m13:51:34.975397 [debug] [Thread-1 (]: Began running node test.Analytics.source_string_not_empty_landing_EMP_FIRSTNAME.09998ede37
+[0m13:51:34.976398 [debug] [Thread-3 (]: Finished running node test.Analytics.source_not_null_landing_product_PRODUCTID.747ef14bf2
+[0m13:51:34.977401 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.Analytics.source_not_null_landing_ord_EMPLOYEEID.4ec413c50f, now test.Analytics.source_string_not_empty_landing_EMP_EMPLOYEEID.9ee56073d4)
+[0m13:51:34.977401 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Analytics.source_not_null_landing_ord_ORDERID.18b2f9709b, now test.Analytics.source_string_not_empty_landing_EMP_FIRSTNAME.09998ede37)
+[0m13:51:34.978403 [debug] [Thread-3 (]: Began running node test.Analytics.source_string_not_empty_landing_EMP_LASTNAME.a0eb79291a
+[0m13:51:34.979398 [debug] [Thread-2 (]: Began compiling node test.Analytics.source_string_not_empty_landing_EMP_EMPLOYEEID.9ee56073d4
+[0m13:51:34.980409 [debug] [Thread-4 (]: Began executing node test.Analytics.source_string_not_empty_landing_EMP_EMAIL.ad2a70cffa
+[0m13:51:34.980409 [debug] [Thread-1 (]: Began compiling node test.Analytics.source_string_not_empty_landing_EMP_FIRSTNAME.09998ede37
+[0m13:51:34.980919 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.Analytics.source_not_null_landing_product_PRODUCTID.747ef14bf2, now test.Analytics.source_string_not_empty_landing_EMP_LASTNAME.a0eb79291a)
+[0m13:51:34.984932 [debug] [Thread-2 (]: Writing injected SQL for node "test.Analytics.source_string_not_empty_landing_EMP_EMPLOYEEID.9ee56073d4"
+[0m13:51:34.985928 [debug] [Thread-4 (]: Finished running node test.Analytics.source_string_not_empty_landing_EMP_EMAIL.ad2a70cffa
+[0m13:51:34.988930 [debug] [Thread-1 (]: Writing injected SQL for node "test.Analytics.source_string_not_empty_landing_EMP_FIRSTNAME.09998ede37"
+[0m13:51:34.988930 [debug] [Thread-3 (]: Began compiling node test.Analytics.source_string_not_empty_landing_EMP_LASTNAME.a0eb79291a
+[0m13:51:34.990456 [debug] [Thread-4 (]: Began running node test.Analytics.source_string_not_empty_landing_STORE_STOREID.067181c22c
+[0m13:51:34.994467 [debug] [Thread-3 (]: Writing injected SQL for node "test.Analytics.source_string_not_empty_landing_EMP_LASTNAME.a0eb79291a"
+[0m13:51:34.995469 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.Analytics.source_string_not_empty_landing_EMP_EMAIL.ad2a70cffa, now test.Analytics.source_string_not_empty_landing_STORE_STOREID.067181c22c)
+[0m13:51:34.996465 [debug] [Thread-4 (]: Began compiling node test.Analytics.source_string_not_empty_landing_STORE_STOREID.067181c22c
+[0m13:51:34.997486 [debug] [Thread-2 (]: Began executing node test.Analytics.source_string_not_empty_landing_EMP_EMPLOYEEID.9ee56073d4
+[0m13:51:35.003983 [debug] [Thread-4 (]: Writing injected SQL for node "test.Analytics.source_string_not_empty_landing_STORE_STOREID.067181c22c"
+[0m13:51:35.003983 [debug] [Thread-1 (]: Began executing node test.Analytics.source_string_not_empty_landing_EMP_FIRSTNAME.09998ede37
+[0m13:51:35.004986 [debug] [Thread-2 (]: Finished running node test.Analytics.source_string_not_empty_landing_EMP_EMPLOYEEID.9ee56073d4
+[0m13:51:35.006985 [debug] [Thread-1 (]: Finished running node test.Analytics.source_string_not_empty_landing_EMP_FIRSTNAME.09998ede37
+[0m13:51:35.006985 [debug] [Thread-3 (]: Began executing node test.Analytics.source_string_not_empty_landing_EMP_LASTNAME.a0eb79291a
+[0m13:51:35.007986 [debug] [Thread-2 (]: Began running node test.Analytics.source_string_not_empty_landing_SUPP_SUPPLIERID.0f3288d417
+[0m13:51:35.008989 [debug] [Thread-1 (]: Began running node test.Analytics.source_string_not_empty_landing_cust_CUSTOMERID.5c8b918977
+[0m13:51:35.010516 [debug] [Thread-3 (]: Finished running node test.Analytics.source_string_not_empty_landing_EMP_LASTNAME.a0eb79291a
+[0m13:51:35.010516 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.Analytics.source_string_not_empty_landing_EMP_EMPLOYEEID.9ee56073d4, now test.Analytics.source_string_not_empty_landing_SUPP_SUPPLIERID.0f3288d417)
+[0m13:51:35.011543 [debug] [Thread-4 (]: Began executing node test.Analytics.source_string_not_empty_landing_STORE_STOREID.067181c22c
+[0m13:51:35.011543 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Analytics.source_string_not_empty_landing_EMP_FIRSTNAME.09998ede37, now test.Analytics.source_string_not_empty_landing_cust_CUSTOMERID.5c8b918977)
+[0m13:51:35.012526 [debug] [Thread-3 (]: Began running node test.Analytics.source_string_not_empty_landing_cust_FIRSTNAME.9a80063562
+[0m13:51:35.012526 [debug] [Thread-2 (]: Began compiling node test.Analytics.source_string_not_empty_landing_SUPP_SUPPLIERID.0f3288d417
+[0m13:51:35.013524 [debug] [Thread-4 (]: Finished running node test.Analytics.source_string_not_empty_landing_STORE_STOREID.067181c22c
+[0m13:51:35.013524 [debug] [Thread-1 (]: Began compiling node test.Analytics.source_string_not_empty_landing_cust_CUSTOMERID.5c8b918977
+[0m13:51:35.014524 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.Analytics.source_string_not_empty_landing_EMP_LASTNAME.a0eb79291a, now test.Analytics.source_string_not_empty_landing_cust_FIRSTNAME.9a80063562)
+[0m13:51:35.018529 [debug] [Thread-2 (]: Writing injected SQL for node "test.Analytics.source_string_not_empty_landing_SUPP_SUPPLIERID.0f3288d417"
+[0m13:51:35.020041 [debug] [Thread-4 (]: Began running node test.Analytics.source_string_not_empty_landing_cust_LASTNAME.8e17b2bc02
+[0m13:51:35.024055 [debug] [Thread-1 (]: Writing injected SQL for node "test.Analytics.source_string_not_empty_landing_cust_CUSTOMERID.5c8b918977"
+[0m13:51:35.024055 [debug] [Thread-3 (]: Began compiling node test.Analytics.source_string_not_empty_landing_cust_FIRSTNAME.9a80063562
+[0m13:51:35.025052 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.Analytics.source_string_not_empty_landing_STORE_STOREID.067181c22c, now test.Analytics.source_string_not_empty_landing_cust_LASTNAME.8e17b2bc02)
+[0m13:51:35.029082 [debug] [Thread-3 (]: Writing injected SQL for node "test.Analytics.source_string_not_empty_landing_cust_FIRSTNAME.9a80063562"
+[0m13:51:35.030074 [debug] [Thread-4 (]: Began compiling node test.Analytics.source_string_not_empty_landing_cust_LASTNAME.8e17b2bc02
+[0m13:51:35.031394 [debug] [Thread-2 (]: Began executing node test.Analytics.source_string_not_empty_landing_SUPP_SUPPLIERID.0f3288d417
+[0m13:51:35.032381 [debug] [Thread-1 (]: Began executing node test.Analytics.source_string_not_empty_landing_cust_CUSTOMERID.5c8b918977
+[0m13:51:35.038378 [debug] [Thread-4 (]: Writing injected SQL for node "test.Analytics.source_string_not_empty_landing_cust_LASTNAME.8e17b2bc02"
+[0m13:51:35.039381 [debug] [Thread-2 (]: Finished running node test.Analytics.source_string_not_empty_landing_SUPP_SUPPLIERID.0f3288d417
+[0m13:51:35.040377 [debug] [Thread-1 (]: Finished running node test.Analytics.source_string_not_empty_landing_cust_CUSTOMERID.5c8b918977
+[0m13:51:35.040885 [debug] [Thread-3 (]: Began executing node test.Analytics.source_string_not_empty_landing_cust_FIRSTNAME.9a80063562
+[0m13:51:35.041892 [debug] [Thread-2 (]: Began running node test.Analytics.source_string_not_empty_landing_ordItms_ORDERID.7a0a1c3140
+[0m13:51:35.041892 [debug] [Thread-1 (]: Began running node test.Analytics.source_string_not_empty_landing_ordItms_ORDERITEMID.cab105569c
+[0m13:51:35.042891 [debug] [Thread-3 (]: Finished running node test.Analytics.source_string_not_empty_landing_cust_FIRSTNAME.9a80063562
+[0m13:51:35.043893 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.Analytics.source_string_not_empty_landing_SUPP_SUPPLIERID.0f3288d417, now test.Analytics.source_string_not_empty_landing_ordItms_ORDERID.7a0a1c3140)
+[0m13:51:35.044892 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Analytics.source_string_not_empty_landing_cust_CUSTOMERID.5c8b918977, now test.Analytics.source_string_not_empty_landing_ordItms_ORDERITEMID.cab105569c)
+[0m13:51:35.045893 [debug] [Thread-3 (]: Began running node test.Analytics.source_string_not_empty_landing_ordItms_PRODUCTID.ef41d37e1f
+[0m13:51:35.046896 [debug] [Thread-4 (]: Began executing node test.Analytics.source_string_not_empty_landing_cust_LASTNAME.8e17b2bc02
+[0m13:51:35.046896 [debug] [Thread-2 (]: Began compiling node test.Analytics.source_string_not_empty_landing_ordItms_ORDERID.7a0a1c3140
+[0m13:51:35.047895 [debug] [Thread-1 (]: Began compiling node test.Analytics.source_string_not_empty_landing_ordItms_ORDERITEMID.cab105569c
+[0m13:51:35.047895 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.Analytics.source_string_not_empty_landing_cust_FIRSTNAME.9a80063562, now test.Analytics.source_string_not_empty_landing_ordItms_PRODUCTID.ef41d37e1f)
+[0m13:51:35.048895 [debug] [Thread-4 (]: Finished running node test.Analytics.source_string_not_empty_landing_cust_LASTNAME.8e17b2bc02
+[0m13:51:35.052426 [debug] [Thread-2 (]: Writing injected SQL for node "test.Analytics.source_string_not_empty_landing_ordItms_ORDERID.7a0a1c3140"
+[0m13:51:35.056424 [debug] [Thread-1 (]: Writing injected SQL for node "test.Analytics.source_string_not_empty_landing_ordItms_ORDERITEMID.cab105569c"
+[0m13:51:35.056424 [debug] [Thread-3 (]: Began compiling node test.Analytics.source_string_not_empty_landing_ordItms_PRODUCTID.ef41d37e1f
+[0m13:51:35.057461 [debug] [Thread-4 (]: Began running node test.Analytics.source_string_not_empty_landing_ord_CUSTOMERID.fd6a8ddaf9
+[0m13:51:35.061987 [debug] [Thread-3 (]: Writing injected SQL for node "test.Analytics.source_string_not_empty_landing_ordItms_PRODUCTID.ef41d37e1f"
+[0m13:51:35.062963 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.Analytics.source_string_not_empty_landing_cust_LASTNAME.8e17b2bc02, now test.Analytics.source_string_not_empty_landing_ord_CUSTOMERID.fd6a8ddaf9)
+[0m13:51:35.063967 [debug] [Thread-4 (]: Began compiling node test.Analytics.source_string_not_empty_landing_ord_CUSTOMERID.fd6a8ddaf9
+[0m13:51:35.064960 [debug] [Thread-2 (]: Began executing node test.Analytics.source_string_not_empty_landing_ordItms_ORDERID.7a0a1c3140
+[0m13:51:35.072534 [debug] [Thread-4 (]: Writing injected SQL for node "test.Analytics.source_string_not_empty_landing_ord_CUSTOMERID.fd6a8ddaf9"
+[0m13:51:35.074513 [debug] [Thread-2 (]: Finished running node test.Analytics.source_string_not_empty_landing_ordItms_ORDERID.7a0a1c3140
+[0m13:51:35.074513 [debug] [Thread-1 (]: Began executing node test.Analytics.source_string_not_empty_landing_ordItms_ORDERITEMID.cab105569c
+[0m13:51:35.075511 [debug] [Thread-3 (]: Began executing node test.Analytics.source_string_not_empty_landing_ordItms_PRODUCTID.ef41d37e1f
+[0m13:51:35.076514 [debug] [Thread-2 (]: Began running node test.Analytics.source_string_not_empty_landing_ord_EMPLOYEEID.e831cdec07
+[0m13:51:35.077514 [debug] [Thread-1 (]: Finished running node test.Analytics.source_string_not_empty_landing_ordItms_ORDERITEMID.cab105569c
+[0m13:51:35.078511 [debug] [Thread-3 (]: Finished running node test.Analytics.source_string_not_empty_landing_ordItms_PRODUCTID.ef41d37e1f
+[0m13:51:35.078511 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.Analytics.source_string_not_empty_landing_ordItms_ORDERID.7a0a1c3140, now test.Analytics.source_string_not_empty_landing_ord_EMPLOYEEID.e831cdec07)
+[0m13:51:35.078511 [debug] [Thread-4 (]: Began executing node test.Analytics.source_string_not_empty_landing_ord_CUSTOMERID.fd6a8ddaf9
+[0m13:51:35.080020 [debug] [Thread-1 (]: Began running node test.Analytics.source_string_not_empty_landing_ord_ORDERID.4772259ecc
+[0m13:51:35.081026 [debug] [Thread-3 (]: Began running node test.Analytics.source_string_not_empty_landing_product_PRODUCTID.a20d720b61
+[0m13:51:35.081026 [debug] [Thread-2 (]: Began compiling node test.Analytics.source_string_not_empty_landing_ord_EMPLOYEEID.e831cdec07
+[0m13:51:35.082027 [debug] [Thread-4 (]: Finished running node test.Analytics.source_string_not_empty_landing_ord_CUSTOMERID.fd6a8ddaf9
+[0m13:51:35.082027 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Analytics.source_string_not_empty_landing_ordItms_ORDERITEMID.cab105569c, now test.Analytics.source_string_not_empty_landing_ord_ORDERID.4772259ecc)
+[0m13:51:35.083026 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.Analytics.source_string_not_empty_landing_ordItms_PRODUCTID.ef41d37e1f, now test.Analytics.source_string_not_empty_landing_product_PRODUCTID.a20d720b61)
+[0m13:51:35.086033 [debug] [Thread-2 (]: Writing injected SQL for node "test.Analytics.source_string_not_empty_landing_ord_EMPLOYEEID.e831cdec07"
+[0m13:51:35.087032 [debug] [Thread-4 (]: Began running node test.Analytics.source_unique_landing_EMP_EMPLOYEEID.0f7b970539
+[0m13:51:35.087032 [debug] [Thread-1 (]: Began compiling node test.Analytics.source_string_not_empty_landing_ord_ORDERID.4772259ecc
+[0m13:51:35.088027 [debug] [Thread-3 (]: Began compiling node test.Analytics.source_string_not_empty_landing_product_PRODUCTID.a20d720b61
+[0m13:51:35.088027 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.Analytics.source_string_not_empty_landing_ord_CUSTOMERID.fd6a8ddaf9, now test.Analytics.source_unique_landing_EMP_EMPLOYEEID.0f7b970539)
+[0m13:51:35.093544 [debug] [Thread-1 (]: Writing injected SQL for node "test.Analytics.source_string_not_empty_landing_ord_ORDERID.4772259ecc"
+[0m13:51:35.097556 [debug] [Thread-3 (]: Writing injected SQL for node "test.Analytics.source_string_not_empty_landing_product_PRODUCTID.a20d720b61"
+[0m13:51:35.098557 [debug] [Thread-4 (]: Began compiling node test.Analytics.source_unique_landing_EMP_EMPLOYEEID.0f7b970539
+[0m13:51:35.100065 [debug] [Thread-2 (]: Began executing node test.Analytics.source_string_not_empty_landing_ord_EMPLOYEEID.e831cdec07
+[0m13:51:35.108080 [debug] [Thread-4 (]: Writing injected SQL for node "test.Analytics.source_unique_landing_EMP_EMPLOYEEID.0f7b970539"
+[0m13:51:35.110082 [debug] [Thread-2 (]: Finished running node test.Analytics.source_string_not_empty_landing_ord_EMPLOYEEID.e831cdec07
+[0m13:51:35.111656 [debug] [Thread-1 (]: Began executing node test.Analytics.source_string_not_empty_landing_ord_ORDERID.4772259ecc
+[0m13:51:35.112600 [debug] [Thread-2 (]: Began running node test.Analytics.source_unique_landing_STORE_STOREID.17d1f7b5db
+[0m13:51:35.113617 [debug] [Thread-3 (]: Began executing node test.Analytics.source_string_not_empty_landing_product_PRODUCTID.a20d720b61
+[0m13:51:35.115607 [debug] [Thread-1 (]: Finished running node test.Analytics.source_string_not_empty_landing_ord_ORDERID.4772259ecc
+[0m13:51:35.116622 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.Analytics.source_string_not_empty_landing_ord_EMPLOYEEID.e831cdec07, now test.Analytics.source_unique_landing_STORE_STOREID.17d1f7b5db)
+[0m13:51:35.116622 [debug] [Thread-3 (]: Finished running node test.Analytics.source_string_not_empty_landing_product_PRODUCTID.a20d720b61
+[0m13:51:35.117624 [debug] [Thread-1 (]: Began running node test.Analytics.source_unique_landing_SUPP_SUPPLIERID.bdc31ff3e0
+[0m13:51:35.118605 [debug] [Thread-4 (]: Began executing node test.Analytics.source_unique_landing_EMP_EMPLOYEEID.0f7b970539
+[0m13:51:35.118605 [debug] [Thread-2 (]: Began compiling node test.Analytics.source_unique_landing_STORE_STOREID.17d1f7b5db
+[0m13:51:35.118605 [debug] [Thread-3 (]: Began running node test.Analytics.source_unique_landing_cust_CUSTOMERID.7a5797ed79
+[0m13:51:35.120138 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Analytics.source_string_not_empty_landing_ord_ORDERID.4772259ecc, now test.Analytics.source_unique_landing_SUPP_SUPPLIERID.bdc31ff3e0)
+[0m13:51:35.121153 [debug] [Thread-4 (]: Finished running node test.Analytics.source_unique_landing_EMP_EMPLOYEEID.0f7b970539
+[0m13:51:35.124171 [debug] [Thread-2 (]: Writing injected SQL for node "test.Analytics.source_unique_landing_STORE_STOREID.17d1f7b5db"
+[0m13:51:35.125150 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.Analytics.source_string_not_empty_landing_product_PRODUCTID.a20d720b61, now test.Analytics.source_unique_landing_cust_CUSTOMERID.7a5797ed79)
+[0m13:51:35.125150 [debug] [Thread-1 (]: Began compiling node test.Analytics.source_unique_landing_SUPP_SUPPLIERID.bdc31ff3e0
+[0m13:51:35.126151 [debug] [Thread-4 (]: Began running node test.Analytics.source_unique_landing_ordItms_ORDERITEMID.3c070b0d08
+[0m13:51:35.126151 [debug] [Thread-3 (]: Began compiling node test.Analytics.source_unique_landing_cust_CUSTOMERID.7a5797ed79
+[0m13:51:35.130690 [debug] [Thread-1 (]: Writing injected SQL for node "test.Analytics.source_unique_landing_SUPP_SUPPLIERID.bdc31ff3e0"
+[0m13:51:35.131701 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.Analytics.source_unique_landing_EMP_EMPLOYEEID.0f7b970539, now test.Analytics.source_unique_landing_ordItms_ORDERITEMID.3c070b0d08)
+[0m13:51:35.135729 [debug] [Thread-3 (]: Writing injected SQL for node "test.Analytics.source_unique_landing_cust_CUSTOMERID.7a5797ed79"
+[0m13:51:35.136700 [debug] [Thread-4 (]: Began compiling node test.Analytics.source_unique_landing_ordItms_ORDERITEMID.3c070b0d08
+[0m13:51:35.142230 [debug] [Thread-4 (]: Writing injected SQL for node "test.Analytics.source_unique_landing_ordItms_ORDERITEMID.3c070b0d08"
+[0m13:51:35.143242 [debug] [Thread-2 (]: Began executing node test.Analytics.source_unique_landing_STORE_STOREID.17d1f7b5db
+[0m13:51:35.143242 [debug] [Thread-2 (]: Finished running node test.Analytics.source_unique_landing_STORE_STOREID.17d1f7b5db
+[0m13:51:35.144250 [debug] [Thread-2 (]: Began running node test.Analytics.source_unique_landing_ord_ORDERID.376825fabb
+[0m13:51:35.146260 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.Analytics.source_unique_landing_STORE_STOREID.17d1f7b5db, now test.Analytics.source_unique_landing_ord_ORDERID.376825fabb)
+[0m13:51:35.147247 [debug] [Thread-1 (]: Began executing node test.Analytics.source_unique_landing_SUPP_SUPPLIERID.bdc31ff3e0
+[0m13:51:35.148244 [debug] [Thread-4 (]: Began executing node test.Analytics.source_unique_landing_ordItms_ORDERITEMID.3c070b0d08
+[0m13:51:35.148244 [debug] [Thread-2 (]: Began compiling node test.Analytics.source_unique_landing_ord_ORDERID.376825fabb
+[0m13:51:35.150245 [debug] [Thread-1 (]: Finished running node test.Analytics.source_unique_landing_SUPP_SUPPLIERID.bdc31ff3e0
+[0m13:51:35.150751 [debug] [Thread-3 (]: Began executing node test.Analytics.source_unique_landing_cust_CUSTOMERID.7a5797ed79
+[0m13:51:35.150751 [debug] [Thread-4 (]: Finished running node test.Analytics.source_unique_landing_ordItms_ORDERITEMID.3c070b0d08
+[0m13:51:35.155760 [debug] [Thread-2 (]: Writing injected SQL for node "test.Analytics.source_unique_landing_ord_ORDERID.376825fabb"
+[0m13:51:35.156761 [debug] [Thread-1 (]: Began running node test.Analytics.source_unique_landing_product_PRODUCTID.ab84e8c463
+[0m13:51:35.157759 [debug] [Thread-3 (]: Finished running node test.Analytics.source_unique_landing_cust_CUSTOMERID.7a5797ed79
+[0m13:51:35.157759 [debug] [Thread-4 (]: Began running node analysis.Analytics.STOREREVENUE
+[0m13:51:35.158778 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Analytics.source_unique_landing_SUPP_SUPPLIERID.bdc31ff3e0, now test.Analytics.source_unique_landing_product_PRODUCTID.ab84e8c463)
+[0m13:51:35.158778 [debug] [Thread-3 (]: Began running node model.Analytics.ORDER_FACT
+[0m13:51:35.160284 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.Analytics.source_unique_landing_ordItms_ORDERITEMID.3c070b0d08, now analysis.Analytics.STOREREVENUE)
+[0m13:51:35.160284 [debug] [Thread-1 (]: Began compiling node test.Analytics.source_unique_landing_product_PRODUCTID.ab84e8c463
+[0m13:51:35.161292 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.Analytics.source_unique_landing_cust_CUSTOMERID.7a5797ed79, now model.Analytics.ORDER_FACT)
+[0m13:51:35.162290 [debug] [Thread-2 (]: Began executing node test.Analytics.source_unique_landing_ord_ORDERID.376825fabb
+[0m13:51:35.162290 [debug] [Thread-4 (]: Began compiling node analysis.Analytics.STOREREVENUE
+[0m13:51:35.166292 [debug] [Thread-1 (]: Writing injected SQL for node "test.Analytics.source_unique_landing_product_PRODUCTID.ab84e8c463"
+[0m13:51:35.167294 [debug] [Thread-3 (]: Began compiling node model.Analytics.ORDER_FACT
+[0m13:51:35.168291 [debug] [Thread-2 (]: Finished running node test.Analytics.source_unique_landing_ord_ORDERID.376825fabb
+[0m13:51:35.171348 [debug] [Thread-4 (]: Writing injected SQL for node "analysis.Analytics.STOREREVENUE"
+[0m13:51:35.174359 [debug] [Thread-3 (]: Writing injected SQL for node "model.Analytics.ORDER_FACT"
+[0m13:51:35.176379 [debug] [Thread-1 (]: Began executing node test.Analytics.source_unique_landing_product_PRODUCTID.ab84e8c463
+[0m13:51:35.178380 [debug] [Thread-1 (]: Finished running node test.Analytics.source_unique_landing_product_PRODUCTID.ab84e8c463
+[0m13:51:35.179376 [debug] [Thread-4 (]: Began executing node analysis.Analytics.STOREREVENUE
+[0m13:51:35.180871 [debug] [Thread-4 (]: Finished running node analysis.Analytics.STOREREVENUE
+[0m13:51:35.181915 [debug] [Thread-3 (]: Began executing node model.Analytics.ORDER_FACT
+[0m13:51:35.182885 [debug] [Thread-3 (]: Finished running node model.Analytics.ORDER_FACT
+[0m13:51:35.183881 [debug] [Thread-2 (]: Began running node model.Analytics.CUSTOMERREVENUE
+[0m13:51:35.183881 [debug] [Thread-1 (]: Began running node model.Analytics.STOREPERFORMANCE
+[0m13:51:35.184903 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.Analytics.source_unique_landing_ord_ORDERID.376825fabb, now model.Analytics.CUSTOMERREVENUE)
+[0m13:51:35.185879 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.Analytics.source_unique_landing_product_PRODUCTID.ab84e8c463, now model.Analytics.STOREPERFORMANCE)
+[0m13:51:35.186882 [debug] [Thread-2 (]: Began compiling node model.Analytics.CUSTOMERREVENUE
+[0m13:51:35.186882 [debug] [Thread-1 (]: Began compiling node model.Analytics.STOREPERFORMANCE
+[0m13:51:35.188883 [debug] [Thread-2 (]: Writing injected SQL for node "model.Analytics.CUSTOMERREVENUE"
+[0m13:51:35.192425 [debug] [Thread-1 (]: Writing injected SQL for node "model.Analytics.STOREPERFORMANCE"
+[0m13:51:35.194417 [debug] [Thread-2 (]: Began executing node model.Analytics.CUSTOMERREVENUE
+[0m13:51:35.195406 [debug] [Thread-1 (]: Began executing node model.Analytics.STOREPERFORMANCE
+[0m13:51:35.196413 [debug] [Thread-2 (]: Finished running node model.Analytics.CUSTOMERREVENUE
+[0m13:51:35.197447 [debug] [Thread-1 (]: Finished running node model.Analytics.STOREPERFORMANCE
+[0m13:51:35.199398 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:51:35.199398 [debug] [MainThread]: Connection 'list_EMART_OMS_L2_PROCESSING' was left open.
+[0m13:51:35.200399 [debug] [MainThread]: On list_EMART_OMS_L2_PROCESSING: Close
+[0m13:51:35.279336 [debug] [MainThread]: Connection 'list_EMART_OMS_L3_CONSUMPTION' was left open.
+[0m13:51:35.280335 [debug] [MainThread]: On list_EMART_OMS_L3_CONSUMPTION: Close
+[0m13:51:35.362962 [debug] [MainThread]: Connection 'model.Analytics.STOREPERFORMANCE' was properly closed.
+[0m13:51:35.363963 [debug] [MainThread]: Connection 'model.Analytics.CUSTOMERREVENUE' was properly closed.
+[0m13:51:35.364964 [debug] [MainThread]: Connection 'model.Analytics.ORDER_FACT' was properly closed.
+[0m13:51:35.364964 [debug] [MainThread]: Connection 'analysis.Analytics.STOREREVENUE' was properly closed.
+[0m13:51:35.378484 [debug] [MainThread]: Command end result
+[0m13:51:35.416594 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\bkumar116\OneDrive - PwC\Documents\DBT\Analytics\target\manifest.json
+[0m13:51:35.420099 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\bkumar116\OneDrive - PwC\Documents\DBT\Analytics\target\semantic_manifest.json
+[0m13:51:35.435985 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\bkumar116\OneDrive - PwC\Documents\DBT\Analytics\target\run_results.json
+[0m13:51:35.437982 [debug] [MainThread]: Command `dbt compile` succeeded at 13:51:35.437982 after 15.29 seconds
+[0m13:51:35.438992 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFB8B45B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFB8F34440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EFB8F34470>]}
+[0m13:51:35.439981 [debug] [MainThread]: Flushing usage events
+[0m13:51:36.335949 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:52:54.422981 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE308DD490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE3327BE30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE30EAA240>]}
+
+
+============================== 13:52:54.429989 | 3219cb6a-5f93-436b-a7c6-5028abc118fe ==============================
+[0m13:52:54.429989 [info ] [MainThread]: Running with dbt=1.9.4
+[0m13:52:54.432120 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'c:\\Users\\bkumar116\\OneDrive - PwC\\Documents\\DBT\\Analytics\\logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\bkumar116\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt ', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:52:54.722573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3219cb6a-5f93-436b-a7c6-5028abc118fe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE30EAA240>]}
+[0m13:52:54.787837 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:52:54.790360 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:52:54.793588 [debug] [MainThread]: Command `cli deps` succeeded at 13:52:54.793588 after 0.61 seconds
+[0m13:52:54.794587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE332C39E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE308DD490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE32C53350>]}
+[0m13:52:54.795588 [debug] [MainThread]: Flushing usage events
+[0m13:52:55.714655 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:56:14.243904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224E1189CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224E4D72480>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224E47F95B0>]}
+
+
+============================== 15:56:14.253052 | ca9604b9-ec77-440e-9c87-afceb8c45c68 ==============================
+[0m15:56:14.253052 [info ] [MainThread]: Running with dbt=1.9.4
+[0m15:56:14.255375 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\bkumar116\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'c:\\Users\\bkumar116\\OneDrive - PwC\\Documents\\DBT\\Analytics\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'True'}
+[0m15:56:14.629550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ca9604b9-ec77-440e-9c87-afceb8c45c68', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224E47B79E0>]}
+[0m15:56:14.691855 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m15:56:14.694862 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m15:56:14.697863 [debug] [MainThread]: Command `cli deps` succeeded at 15:56:14.697863 after 0.72 seconds
+[0m15:56:14.698863 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224E5019280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224E458A5D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000224E4589010>]}
+[0m15:56:14.699864 [debug] [MainThread]: Flushing usage events
+[0m15:56:15.583985 [debug] [MainThread]: An error was encountered while trying to flush usage events
